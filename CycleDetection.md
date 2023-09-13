@@ -1,6 +1,6 @@
 # Алгоритм обнаружения цикла (Флойда, "Заяц и Черепаха")
 
-[Задача Song на TestDome](https://www.testdome.com/library?page=1&term=Song&termMatchType=equalsCaseInsensitive&questionId=88835&skillArea=63
+[Задача Song на TestDome](https://www.testdome.com/library?page=1&term=Song&termMatchType=equalsCaseInsensitive&questionId=88835&skillArea=63)
 
 Алгоритм Флойда, также известный как алгоритм "Заяц и Черепаха", используется для обнаружения циклов в последовательностях или связных структурах, таких как связанные списки. Этот алгоритм был разработан Робертом Флойдом и является частным случаем алгоритма обнаружения циклов.
 
