@@ -1,18 +1,18 @@
-# Алгоритм обнаружения цикла (Флойда, "Заяц и Черепаха")
+# Floyd's Cycle Detection Algorithm ("Tortoise and the Hare")
 
-[Задача Song на TestDome](https://www.testdome.com/library?page=1&term=Song&termMatchType=equalsCaseInsensitive&questionId=88835&skillArea=63)
+[TestDome's Song Task](https://www.testdome.com/library?page=1&term=Song&termMatchType=equalsCaseInsensitive&questionId=88835&skillArea=63)
 
-Алгоритм Флойда, также известный как алгоритм "Заяц и Черепаха", используется для обнаружения циклов в последовательностях или связных структурах, таких как связанные списки. Этот алгоритм был разработан Робертом Флойдом и является частным случаем алгоритма обнаружения циклов.
+Floyd's algorithm, also known as the "Tortoise and the Hare" algorithm, is used to detect cycles in sequences or linked structures like linked lists. This algorithm was devised by Robert Floyd and is a special case of the cycle detection algorithm.
 
-## Работа алгоритма
+## How the Algorithm Works
 
-1. Используются два указателя: один двигается в два раза быстрее другого.
-2. Если есть цикл, быстрый указатель ("заяц") догонит медленный указатель ("черепаху").
+1. Two pointers are used: one moves twice as fast as the other.
+2. If there is a cycle, the fast pointer ("hare") will catch up to the slow pointer ("tortoise").
 
-**Сложность по времени:** \(O(n)\), где \(n\) - число элементов в последовательности.
-**Сложность по пространству:** \(O(1)\), так как используются только два указателя.
+**Time Complexity:** \(O(n)\), where \(n\) is the number of elements in the sequence.
+**Space Complexity:** \(O(1)\), since only two pointers are used.
 
-## Пример на JavaScript
+## JavaScript Example
 
 ```javascript
 class Song {
@@ -29,7 +29,6 @@ class Song {
   isInRepeatingPlaylist() {
     let tortoise = this;
     let hare = this;
-    
     
     while (hare !== undefined && hare.nextSong !== undefined) {
       tortoise = tortoise.nextSong;           // Move tortoise by one step
