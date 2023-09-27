@@ -53,6 +53,8 @@ If you want to search for a character which is also a special regex symbol like 
 - To match a date in the format `dd/mm/yyyy`: `^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$`
 - To match any number (including decimals): `^-?\d*(\.\d+)?$`
 - To match all html tags: `/<\/?[^>]+(>|$)/g`
+- To replace all html tags: divs.replace(/<\/?[^>]+(>|$)/g, "");
+- To replace dublicates from string: str.replace(/([a-zA-Z])(?=.*\1)/g, '');;
 
 ## How Regular Expressions Work "Under the Hood", Core Operating Principle:
 
