@@ -8,14 +8,15 @@ You may assume the obj is the output of JSON.parse. In other words, it is valid 
 
 ## JavaScript Example
 
+
+### First solution
 ```javascript
 
 /**
  * @param {Object|Array} obj
  * @return {Object|Array}
  */
- 
-// First solution 
+  
 var compactObject = function(obj) {
   const isInputArray = Array.isArray(obj);
   const result = isInputArray ? [] : {};
@@ -42,9 +43,10 @@ var compactObject = function(obj) {
 
   return result;
 };
+```
 
-
-
+### Second optimised solution
+```javascript
 
 // Second optimised solution 
 var compactObject = function(obj) {
@@ -64,3 +66,4 @@ var compactObject = function(obj) {
 
     return compacted;
 };
+```

@@ -13,9 +13,9 @@ emit - This method takes in two arguments: the name of an event as a string and 
 
 ## JavaScript Example
 
+### First solution
 ```javascript
 
-// First solution 
 class EventEmitter {
   constructor(){
     this.eventStack = [];
@@ -41,10 +41,11 @@ class EventEmitter {
   }
 }
 
+```
 
+### Second optimised solution with Map
+```javascript
 
-
-// Second optimised solution with Map
 class EventEmitter {
   constructor() {
     this.events = new Map();
@@ -83,3 +84,4 @@ class EventEmitter {
     return results;
   }
 }
+```
